@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  resources :journal_entries
+
+  resources :commoditycategories
+
+  resources :commodities
+
+  resources :systems
+
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
